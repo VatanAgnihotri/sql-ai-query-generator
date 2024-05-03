@@ -1,0 +1,21 @@
+{
+    "extends": "@tsconfig/node20/tsconfig.json",
+    "include": ["**/*"],
+    "exclude": ["node_modules"],
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "outDir": "dist",
+        "allowUnreachableCode":false,
+        "allowUnusedLabels":false,
+        "alwaysStrict":true,
+        "exactOptionalPropertyTypes":true,
+        "noFallthroughCasesInSwitch":true,
+        "noImplicitAny":true,
+        "noImplicitOverride":false,
+        "forceConsistentCasingInFileNames":true
+      },
+  }
