@@ -12,7 +12,9 @@
   },
   "type": "module",
   "scripts": {
-    "build": "npm run lint && rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && sh fixup.sh",
+    "prepublishOnly": "npm run lint",
+    "build": "rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && sh fixup.sh",
+    "build:local": "npm run lint && rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && sh fixup.sh",
     "start": "node dist/index.js",
     "lint": "npx eslint **/*.ts",
     "lint-fix": "npx eslint **/*.ts  --fix",
