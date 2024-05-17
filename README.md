@@ -60,16 +60,15 @@ main();
 
 - `How to generate OpenAI API Key`: [OpenAI API Guide](https://platform.openai.com/docs/quickstart?context=node)
 
-<!--
+
 ## Example
 
 You can interact with the example in a few different ways:
 
-1. Check the live Demo. Navigate to [http://localhost:1234/](http://localhost:1234/).<br>
+1. Check the live Demo.[Click here](https://sql-query-generator-frontend.vercel.app/).<br>
 1. Hit the live API using this package with Postman. Use the below details.
 
 - `Method`:`POST`
 - `Endpoint`:`https://sql-query-generator-backend.onrender.com/query`
 - `Body`: ` {"QUERY": "Create user table with firstname, lastname, DOB, highest education"}`
 
--->
