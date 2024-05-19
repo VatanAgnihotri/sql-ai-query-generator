@@ -1,6 +1,6 @@
 {
   "name": "sql-ai-query-generator",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "This is a node package which can be used to generate SQL queries by providing inputs in simple English.",
   "main": "dist/cjs/index.js",
   "module": "dist/mjs/index.js",
@@ -12,7 +12,7 @@
   },
   "type": "module",
   "scripts": {
-    "prepublishOnly": "npm run lint",
+    "prepublishOnly": "npm run lint && npm run build",
     "build": "rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && sh fixup.sh",
     "build:local": "npm run lint && rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && sh fixup.sh",
     "start": "node dist/index.js",
